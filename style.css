@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Sofia Sans', 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    background-color: rgb(242, 252, 235);
+    margin: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding:15px;
+}
+
+.avatar {
+    width: 200px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+    margin-bottom: 15px;
+}
+
+
+.info {
+    margin-bottom: 20px;
+    display: flex;
+}
+
+@media (max-width: 800px) {
+    .info {
+        display: block;
+        text-align: center;
+    }
+
+    .info-text{
+        margin: auto;
+    }
+}
+
+.info-text{
+    margin-left: 30px;
+}
+
+.live p {
+    font-style: italic;
+    color: rgb(101, 3, 239);
+}
+
+
+a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(62, 102, 196);
+    text-decoration: underline;
+}
+
+a:visited {
+    color: rgb(140, 41, 227);
+}
+
+a:active {
+    color: blue;
+}
+
+.card1, .card2, .card3, .card4, .card5 {
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-left: 5px solid rgb(212, 218, 207);
+}
+
+.card1 h1{
+    margin-bottom: 10px;
+}
+
+.list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.list li {
+    margin-bottom: 8px;
+    border-bottom: 1px solid;
+}
+
+.list li:nth-child(even) {
+    background: rgb(217, 215, 215);
+}
+
+.table {
+    width: 100%;
+}
+
+.table td, .table th{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.table th:hover {
+    background: rgb(235, 234, 235);
+}
+
+.form h3 {
+    text-align: center;
+}
+
+.form-row {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.form-row .lbl {
+    margin-right: 20px;
+    width: 50%;
+}
+
+.form-row .lbl:last-child {
+    margin-right: 0;
+}
+
+@media (max-width:650px) {
+    .form-row {
+        display: block;
+    }
+
+    .form-row .lbl {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+.lbl label {
+    display: block;
+}
+
+.lbl input, .lbl textarea {
+    width: 100%;
+    box-sizing: border-box;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid gray;
+    padding: 15px 0 10px;
+    outline: none;
+    font-family: inherit;
+    font-size: 14px;
+}
+.btn {
+    background: rgb(195, 217, 237);
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+    font-family: inherit;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: rgb(168, 158, 235);
+}
+
